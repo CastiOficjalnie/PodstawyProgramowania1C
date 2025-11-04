@@ -68,3 +68,41 @@ print(cale_zdanie2)
 napis5 = 'prawdopodobienstwo'
 ile_razy_o = napis5.count('o')
 print(ile_razy_o)
+
+# 5. mutowalnosc stringow
+napis6 = "fiwyka"
+# napis6[2] = 'z'
+# print(napis6)
+# stringi sa niemutowalne, czyli nie mozna podmieniac pojednyczych liter
+
+# sposob na zmutowanie stringa
+napis6_lista = list(napis6)
+napis6_lista[2] = 'z'
+print(napis6_lista)
+napis6_gotowy = ''.join(napis6_lista)
+print(napis6_gotowy)
+
+# 6. funckja len
+
+napis7 = 'jezykpolski'
+print(len(napis7))
+
+# 7. powielanie stringa
+napis8 = 'informatyka'
+print(napis * 3)
+
+# 8. funkcje testujace cyfry i litery
+napis9 = 'qwerty'
+if napis9.isalpha() == True:
+    print('sklada sie z liter')
+else:
+    print('slowo nie sklada sie z liter')
+
+napis10 = '1410w'
+if napis10.isdigit() == True:
+    print('slowo sklada sie tylko z cyfr')
+else:
+    print('slowo sklada sie nie tylko z cyfr')
+
+napis11 = '1410w'
+if napis11.isalnum()
