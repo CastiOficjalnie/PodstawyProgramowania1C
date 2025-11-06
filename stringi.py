@@ -1,5 +1,3 @@
-from zmienne import liczba_calkowita
-
 napis = 'informatyka'
 
 # fragment tekstu
@@ -105,4 +103,45 @@ else:
     print('slowo sklada sie nie tylko z cyfr')
 
 napis11 = '1410w'
-if napis11.isalnum()
+# if napis11.isalnum() == True:
+
+
+
+
+
+# 9.kody ASCII
+
+# 9.1. ze znaku na kod ASCII
+print(ord("A"))
+
+# 9.2 z kodu ASCII na znak
+print(chr(66))
+
+ # 10. funkcje
+
+# funkcja translate
+slownik = str.maketrans('ąęćóżśźłń', "aecozszln")
+napis12 = 'infórmątyką'
+napis12_poprawny = napis12.translate(slownik)
+print(napis12_poprawny)
+
+# 10.2 funkcje duzych i malych literek
+napis13 = 'KoNGo'
+napis13_tylko_duze = napis13.upper()
+print(napis13_tylko_duze)
+
+# 11.podstawianie ciagu znakow
+napis14 = 'chleb kosztuje 15 zl a bulka 5 zl'
+napis14_w_euro = napis14.replace('zl', '€')
+print(napis14_w_euro)
+
+# 12. sortowanie i odwracanie napisow
+# 12.1 odwracanie
+napis15 = "kemot"
+napis15_odwrotnie = napis15[::-1]
+
+# 12.2 sortowanie napisow
+napis16 = 'dbca'
+napis16_posortowany_lista = sorted(napis16)
+napis16_posortowany_ciag = ''.join(napis16_posortowany_lista)
+print(napis16_posortowany_ciag)
