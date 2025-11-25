@@ -45,10 +45,10 @@ for i in lista4:
     print('czesc')
 
 # 3. generatory i petle
-przedzial = range(1, 10) #liczby od 1 do 9
-
-for i in przedzial:
-    print(i)
+# przedzial = range(1, 10) #liczby od 1 do 9
+#
+# for i in przedzial:
+#     print(i)
 
 # petla ktora wykona sie 10 razy
 # for i in range(10):
@@ -58,17 +58,47 @@ for i in przedzial:
 lista.append(0)
 print(lista5)'''
 
-lista = [0]
-
-for i in lista:
-    print('czesc')
-    lista.append(0)
+# lista = [0]
+#
+# for i in lista:
+#     print('czesc')
+#     lista.append(0)
 
 # 4. petla while
 
-liczba = 5
+# liczba = 5
+#
+# while liczba > 0:
+#     print(liczba)
+#     liczba = liczba - 1
 
-while liczba > 0:
-    print(liczba)
-    liczba = liczba - 1
+'''X = list(range(0, 103, 3))
+print(f'x\ty')
+for x in X:
+    y = 0.5 * x + 3
+    # print(x, y)
+    print(f'{x}\t{y}')'''
 
+X = list(range(-30, 61, 1))
+print(f'x\ty')
+for x in range(-30, 61):
+    x = x / 10
+    y = 0.5 * x + 3
+    # print(x, y)
+    print(f'{x}\t{y}\n')
+
+# zadanie 67
+
+lista1 = list(range(3, 31, 3))
+lista2 = list(range(11, 111, 11))
+lista3 = list(range(13, 131, 13))
+
+print(f'x\ty\tz')
+
+# sposob 1
+'''for x, y, z in zip(lista1, lista2, lista3):
+    print(f'{x}\t{y}\t{z}')'''
+
+# sposob 2
+for i in range(10):
+    print(f'{lista1[i]}\t{lista2[i]}\t{lista3[i]}')
