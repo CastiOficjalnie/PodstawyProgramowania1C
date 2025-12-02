@@ -102,3 +102,22 @@ print(f'x\ty\tz')
 # sposob 2
 for i in range(10):
     print(f'{lista1[i]}\t{lista2[i]}\t{lista3[i]}')
+
+lista = [7]
+
+'''for i in lista:
+    liczba = float(input('podaj liczbe rzeczywista '))
+    print(liczba)
+    if liczba != 67:
+        lista.append(3)'''
+
+'''for i in lista:
+    print(i)
+    lista.append(i + 1)'''
+
+lista = [12, 45, 78, 101, 9, -5, 9, 7, 23]
+for i in range(len(lista)):
+    print(lista[1:8:2])
+
+
+
