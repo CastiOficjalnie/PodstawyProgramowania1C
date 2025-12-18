@@ -10,7 +10,7 @@ for x in range(1, n + 1):
 
 print(iloczyn)'''
 
-lista = [4, 12, 8, 1, 5, 6, 3]
+'''lista = [4, 12, 8, 1, 5, 6, 3]
 licznik = 0
 
 for x in range(len(lista)):
@@ -29,5 +29,37 @@ for x in range(n):
     if ile_a > max_ile_a:
         max_napis = napis
 
-print(max_napis)
+print(max_napis)'''
+
+
+x, y = 0, 0
+
+while True:
+    ruch = input("podaj ruch")
+    if ruch == 'q':
+        break
+    elif ruch == 'g':
+        if y < 9:
+            y += yg
+        else:
+            print('niemożliwy ruch')
+    elif ruch == 'l':
+        if x > 0:
+            x -= x
+        else:
+            print("niemożliwy ruch")
+    elif ruch == 'd':
+        if y > 0:
+            y = y
+        else:
+            print('niemożliwy ruch')
+    elif ruch == 'p':
+        if x < 9:
+            x += x
+        else:
+            print("niemożliwy ruch")
+    else:
+        print('ruch nieznany')
+print(f'({x}, {y})')
+
 
