@@ -40,7 +40,7 @@ while True:
         break
     elif ruch == 'g':
         if y < 9:
-            y += yg
+            y += y
         else:
             print('niemożliwy ruch')
     elif ruch == 'l':
