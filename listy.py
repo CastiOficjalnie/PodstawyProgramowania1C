@@ -36,6 +36,24 @@ print(lista7)
 # 5. mnozenie listy przez liczbe
 lista9 = [0] * 1000
 print(lista9)
-lista10 = [[0] * 10] * 10 #dana ilosc list
+'''lista10 = [[0] * 10] * 10 #dana ilosc list
 lista10[0][0] = 5
-print(lista10)
+print(lista10)'''
+
+'''# sortowanie i odwracani listy
+lista10 = {4, -1, 0, 5, 2, 9, 3}
+print(sorted(lista10))'''
+
+#wyrazenia listowe(listy skladane)
+lista11 = list(range(1, 11))
+lista11_kwadraty = [x ** 2 for x in lista11 if x % 2 == 0]
+print(lista11_kwadraty)
+
+# usuwanie elementu na bazie jego wartosci:
+lista12 = [4, 7, 4, 8, 2, 1]
+while 4 in lista12:
+    lista12.remove(4)
+print(lista12)
+#usuwanie elementu na bazie indeksu:
+lista13 = [5, 1, 8, 3, 9, 10]
+del.lista13[2] #usuwanie elementu o indeksie 2
