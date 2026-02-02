@@ -56,4 +56,5 @@ while 4 in lista12:
 print(lista12)
 #usuwanie elementu na bazie indeksu:
 lista13 = [5, 1, 8, 3, 9, 10]
-del.lista13[2] #usuwanie elementu o indeksie 2
+'''del.lista13[2] #usuwanie elementu o indeksie 2'''
+
