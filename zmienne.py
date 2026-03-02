@@ -34,3 +34,4 @@ print(type(slownik))
 
 
 
+
