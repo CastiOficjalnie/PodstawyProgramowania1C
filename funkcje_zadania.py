@@ -66,12 +66,13 @@ def unikatowe_elementy(l1, l2):
     zbior = set()
     l = l1 + l2
     for x in l:
-        if l.count(x) == 1:
+        if x in l1 and x in l2:
+            pass
+        else:
+            zbior.add(x)
             zbior.add(x)
     return zbior
 print(unikatowe_elementy([67, 41, 89], [41, 61, 67]))
-
-
 
 
 
