@@ -52,3 +52,27 @@ def liczby_niezalezne(lista):
 print(liczby_niezalezne([12, 7, 3, 6, 21, 74 ]))
 
 # dom(4, 5, 6, 7, 8)
+mango = 11
+mustard = 676767
+def ile_cyfr(liczba):
+    licznik = 1
+    while liczba > 0:
+        liczba = liczba// 10 #liczenie dlugosci liczby az do 0
+        licznik += 1
+    return licznik
+print(ile_cyfr(67 * mustard ** mango))
+
+def unikatowe_elementy(l1, l2):
+    zbior = set()
+    l = l1 + l2
+    for x in l:
+        if l.count(x) == 1:
+            zbior.add(x)
+    return zbior
+print(unikatowe_elementy([67, 41, 89], [41, 61, 67]))
+
+
+
+
+
+
