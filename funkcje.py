@@ -35,3 +35,31 @@ def p_gran(a, b):
 Pg = p_gran(7, 4)
 print(Pg)
 
+'''def f1(x, y):
+    return x * y
+def f2(f, a, b, n):
+    return f(a, b) * n
+print(f2(f1, 2, 4, 6))
+
+def f(x):
+    return 0.5 * x ** 2 - 3
+
+print(f(6))
+def Zw(f, D):
+    return [f(x) for x in D]
+print(Zw(f, [2, 4, 6, 8]))'''
+
+
+def ile_liter(slowo):
+    slownik = {}
+    for x in slowo:
+        ile = slowo.count(x)
+        slownik[x] = ile
+    return slownik
+print(ile_liter('sigeonpex'))
+
+# budowa modulowa polega na tym ze
+# do jednego dzialania w postaci
+# funkcji korzysta sie z innych
+# funkcji
+
