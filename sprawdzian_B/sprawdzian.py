@@ -13,3 +13,5 @@ def Vsr(rv, rp, dt):
 
 def szyb_sr(Vsr):
     return (Vsr[0] +
+
+
